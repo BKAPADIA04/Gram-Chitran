@@ -1,0 +1,94 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('./images/earth.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 600px;
+
+}
+
+.hero .hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 20px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.cta-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #e68900;
+}
+  
+.rotating-image {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    animation: rotateAndMove 2s ease-in forwards; /* Animation duration and easing */
+  }
+  
+  .rotating-image .image-rotate {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: url('./images/rounded.jpg');
+    background-size: contain;
+  }
+  
+@keyframes rotateAndMove {
+  0% {
+    opacity: 1;
+    top: 20px;
+    left: 20px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    top: calc(100% - 220px); 
+    left: calc(100% - 220px);
+    transform: translate(0, 0) rotate(720deg);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateY(-150px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
