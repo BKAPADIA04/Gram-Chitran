@@ -16,12 +16,9 @@ This project focuses on detecting and classifying features such as buildings, wa
 ## Directory Structure
 
 ```plaintext
-├── images/                     # Folder containing satellite images
-├── masks/                      # Folder containing corresponding mask images
-├── model/                      # Folder for saving the trained model
-├── scripts/                    # Python scripts for training, evaluation, and inference
-│   ├── train_model.py          # Script for training the model
-│   ├── infer.py                # Script for running inference on new images
-│   └── visualize_results.py    # Script for visualizing the results
-├── README.md                   # This readme file
-└── requirements.txt            # List of required Python libraries
+├── gis.ipynb/                    
+├── Datasets/                    
+│   ├── Amora_Shapefile          
+│   ├── Godri_Shapefile                
+│   └── Villages    
+├── README.md                   # This readme file         
