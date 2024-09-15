@@ -16,7 +16,7 @@ This project focuses on detecting and classifying features such as buildings, wa
 ## Directory Structure
 
 ```plaintext
-├── gis.ipynb/                  # Classification using CNN Architecture  
+├── gis.ipynb/                  # Classification using U-Net Architecture  
 ├── Datasets/                    
 │   ├── Amora_Shapefile         # Vector layer of Amora Village
 │   ├── Godri_Shapefile         # Vector Layer of Godri Village       
